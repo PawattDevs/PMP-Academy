@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMP Academy | Learning Today. Leading Tomorrow.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#" class="brand" onclick="showPage('home')">
+      PMP<span></span> ACADEMY
+    </a>
+
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+    <nav id="navigation">
+      <a href="#" class="active" data-page="home"
+         onclick="showPage('home')">หน้าหลัก</a>
+      <a href="#" data-page="courses"
+         onclick="showPage('courses')">คอร์สเรียน</a>
+      <a href="#" data-page="about"
+         onclick="showPage('about')">เกี่ยวกับเรา</a>
+      <a href="#" data-page="your-courses"
+         onclick="showPage('your-courses')">เข้าเรียน</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="page active">
+
+    <div class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">WELCOME TO PMP ACADEMY</div>
+
+        <h1>Practice Makes<br>
+          <span>PERFECT.</span>
+        </h1>
+
+        <p>
+          สถาบันสอนติวออนไลน์ทั่วประเทศ
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary"
+            onclick="showPage('courses')">
+            คอร์สเรียนของเรา →
+          </button>
+
+          <button class="btn btn-outline"
+            onclick="showPage('about')">
+            ทีมติวเตอร์ของเรา
+          </button>
+        </div>
+      </div>
+    </div>
+
+      <section class="home-courses">
+        <div class="section-heading">
+          <div class="eyebrow">OUR COURSES</div>
+          <h2>คอร์สเรียนที่แนะนำ</h2>
+          <p>คอร์สเตรียมสอบสนามต่างๆ แยกตามระดับชั้นและสนามสอบ</p>
+        </div>
+
+        <div class="course-grid" id="featuredCourses"></div>
+
+        <div class="center-button">
+          <button class="btn btn-primary"
+            onclick="showPage('courses')">
+            ดูคอร์สเพิ่มเติม →
+          </button>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+  <!-- OUR COURSES -->
+  <section id="courses" class="page">
+    <div class="container page-content">
+
+      <div class="section-heading">
+        <div class="eyebrow">OUR COURSES</div>
+        <h2>คอร์สเรียน</h2>
+        <p>เลือกดูคอร์สที่คุณต้องการ</p>
+      </div>
+
+      <div class="course-grid" id="allCourses"></div>
+
+      <div class="notice">
+        <strong>Individual course pricing:</strong>
+        ฿198 per semester or ฿369 per academic year.
+        Please confirm current availability before registration.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT US -->
+  <section id="about" class="page">
+    <div class="container page-content">
+
+      <div class="section-heading">
+        <div class="eyebrow">GET TO KNOW US</div>
+        <h2>เกี่ยวกับ PMP Academy</h2>
+        <p>ทีมรุ่นพี่ติวเตอร์ และช่องทางติดต่อ</p>
+      </div>
+
+      <div class="about-intro">
+        <h3>Our Mission</h3>
+        <p>
+          PMP Academy aims to provide affordable and accessible
+          educational resources through recorded lessons,
+          learning materials and practice exercises.
+        </p>
+        <br>
+        <p>
+          We believe every student deserves the opportunity
+          to learn, improve and achieve their goals.
+        </p>
+      </div>
+
+      <div class="section-heading">
+        <div class="eyebrow">PMP TUTORS TEAM</div>
+        <h2>ทีมติวเตอร์</h2>
+        <p>Six tutors. Six subject areas. One team.</p>
+      </div>
+
+      <div class="tutor-grid">
+
+        <div class="tutor-card">
+          <div class="tutor-avatar">H</div>
+          <h3>P' Henry</h3>
+          <p>Mathematics & Physics</p>
+        </div>
+
+        <div class="tutor-card">
+          <div class="tutor-avatar">P</div>
+          <h3>P' Poom</h3>
+          <p>English & Physics & Geography</p>
+        </div>
+
+        <div class="tutor-card">
+          <div class="tutor-avatar">P</div>
+          <h3>P' Peem</h3>
+          <p>Chemistry</p>
+        </div>
+
+        <div class="tutor-card">
+          <div class="tutor-avatar">T</div>
+          <h3>P' Tonkwao</h3>
+          <p>Biology</p>
+        </div>
+
+        <div class="tutor-card">
+          <div class="tutor-avatar">T</div>
+          <h3>P' TT</h3>
+          <p>Astronomy & Geography</p>
+        </div>
+
+        <div class="tutor-card">
+          <div class="tutor-avatar">M</div>
+          <h3>P' Major</h3>
+          <p>English</p>
+        </div>
+
+        <div class="tutor-card">
+          <div class="tutor-avatar">M</div>
+          <h3>P' Him</h3>
+          <p>Biology</p>
+        </div>
+
+        <div class="tutor-card">
+          <div class="tutor-avatar">P</div>
+          <h3>P' Phum</h3>
+          <p>Mathematics</p>
+        </div>
+
+        <div class="tutor-card">
+          <div class="tutor-avatar">K</div>
+          <h3>P' Korn</h3>
+          <p>Chemistry</p>
+        </div>
+
+      </div>
+
+         <div class="contact-section">
+        <h3>ช่องทางติดต่อเรา</h3>
+        <p>
+          ig: pmp.academy.surin <br>
+          ig: beatus.terrarum <br>
+          ig: tonkwaaaaaa <br>
+          ig: thixrryy.10 <br>
+          email: pawat07.prom@gmail.com
+        </p>
+
+        <a href="pawat07.prom@gmail.com"
+           class="btn btn-primary">
+          ติดต่ออีเมลแอดมิน
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- YOUR COURSES -->
+  <section id="your-courses" class="page">
+    <div class="container page-content">
+
+      <div class="section-heading">
+        <div class="eyebrow">YOUR LEARNING SPACE</div>
+        <h2>Your Courses</h2>
+        <p>Your selected courses, all in one place.</p>
+      </div>
+
+      <div class="dashboard">
+        <h3>My Learning Dashboard</h3>
+        <p class="muted">
+          Keep track of the courses you've selected.
+        </p>
+
+        <div id="enrolledCourses"></div>
+
+        <div class="notice">
+          This is currently a demonstration dashboard.
+          Selections are saved only in this browser.
+          Real accounts and secure enrollment require a backend.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>PMP ACADEMY</strong></p>
+  <p>Learning Today. Leading Tomorrow.</p>
+  <p>© 2026 PMP Academy. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
